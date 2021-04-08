@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: consumindoEndpoint
+
+grpc:
+  client:
+    plaintext: true
+    max-retry-attempts: 10
+  channels:
+    frete:
+      address: 'localhost:50051'
+      plaintext: true
+      max-retry-attempts: 10
